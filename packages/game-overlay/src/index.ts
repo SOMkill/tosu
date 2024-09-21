@@ -44,12 +44,12 @@ export const injectGameOverlay = async (p: Process) => {
         if (!existsSync(gameOverlayPath)) {
             const archivePath = path.join(
                 gameOverlayPath,
-                'gosu-gameoverlay.zip'
+                'gosumemory_windows_386.zip'
             );
 
             await mkdir(gameOverlayPath);
             await downloadFile(
-                'https://dl.kotworks.cyou/gosu-gameoverlay.zip',
+                'https://github.com/l3lackShark/gosumemory/releases/download/1.3.9/gosumemory_windows_386.zip',
                 archivePath
             );
 
